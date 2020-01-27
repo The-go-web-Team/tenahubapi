@@ -20,15 +20,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Godeps.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Godeps/Godeps.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="gorm_user.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user/repository/gorm_user.go">
           <provider selected="true" editor-type-id="text-editor">
@@ -56,15 +47,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="entities.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/entity/entities.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="mock_entities.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/entity/mock_entities.go">
           <provider selected="true" editor-type-id="text-editor" />
@@ -88,14 +70,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="service_service.go" pinned="false" current-in-tab="true">
+      <file leaf-file-name="service_service.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/service/service/service_service.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+              <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
               <folding>
                 <element signature="e#17#92#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-136">
+              <caret line="104" column="24" lean-forward="true" selection-start-line="104" selection-end-line="105" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rating_handler.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/delivery/http/handler/rating_handler.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -124,7 +124,6 @@
         <option value="$PROJECT_DIR$/comment/service.go" />
         <option value="$PROJECT_DIR$/delivery/http/handler/comment_handler.go" />
         <option value="$PROJECT_DIR$/delivery/http/handler/healthcenter_handler.go" />
-        <option value="$PROJECT_DIR$/delivery/http/handler/rating_handler.go" />
         <option value="$PROJECT_DIR$/delivery/http/handler/service_handler.go" />
         <option value="$PROJECT_DIR$/delivery/http/handler/session_handler.go" />
         <option value="$PROJECT_DIR$/delivery/http/handler/user_handler.go" />
@@ -159,6 +158,7 @@
         <option value="$PROJECT_DIR$/user/service.go" />
         <option value="$PROJECT_DIR$/main.go" />
         <option value="$PROJECT_DIR$/Godeps/Godeps.json" />
+        <option value="$PROJECT_DIR$/delivery/http/handler/rating_handler.go" />
       </list>
     </option>
   </component>
@@ -192,7 +192,20 @@
             <path>
               <item name="tenahubapi" type="b2602c69:ProjectViewProjectNode" />
               <item name="tenahubapi" type="462c0819:PsiDirectoryNode" />
-              <item name="Godeps" type="462c0819:PsiDirectoryNode" />
+              <item name="delivery" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tenahubapi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tenahubapi" type="462c0819:PsiDirectoryNode" />
+              <item name="delivery" type="462c0819:PsiDirectoryNode" />
+              <item name="http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tenahubapi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tenahubapi" type="462c0819:PsiDirectoryNode" />
+              <item name="delivery" type="462c0819:PsiDirectoryNode" />
+              <item name="http" type="462c0819:PsiDirectoryNode" />
+              <item name="handler" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tenahubapi" type="b2602c69:ProjectViewProjectNode" />
@@ -244,17 +257,6 @@
               <item name="user" type="462c0819:PsiDirectoryNode" />
               <item name="repository" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="tenahubapi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tenahubapi" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tenahubapi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tenahubapi" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="github.com" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -284,6 +286,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -501,13 +504,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1819">
-          <caret line="142" column="1" selection-start-line="142" selection-start-column="1" selection-end-line="142" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/comment/repository/gorm_comment.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -557,13 +553,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/delivery/http/handler/rating_handler.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -660,10 +649,24 @@
     <entry file="file://$PROJECT_DIR$/service/service/service_service.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
           <folding>
             <element signature="e#17#92#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/delivery/http/handler/rating_handler.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-136">
+          <caret line="104" column="24" lean-forward="true" selection-start-line="104" selection-end-line="105" />
         </state>
       </provider>
     </entry>
