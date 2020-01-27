@@ -1,7 +1,7 @@
 package handler
 
 import (
-	"github.com/TenaHub/api/entity"
+	"github.com/tenahubapi/entity"
 	"encoding/json"
 	"fmt"
 	"net/http"
