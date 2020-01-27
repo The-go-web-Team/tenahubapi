@@ -3,44 +3,45 @@ package main
 import (
 	// "fmt"
 	"net/http"
-	// "github.com/TenaHub/api/entity"
+	// "github.com/tenahubapi/entity"
 	_ "github.com/jinzhu/gorm/dialects/postgres"
-	"github.com/TenaHub/api/delivery/http/handler"
+	"github.com/tenahubapi/delivery/http/handler"
 
-	hcserviceRepository "github.com/TenaHub/api/service/repository"
-	hcserviceService "github.com/TenaHub/api/service/service"
+	hcserviceRepository "github.com/tenahubapi/service/repository"
+	hcserviceService "github.com/tenahubapi/service/service"
 
-	commentRepository "github.com/TenaHub/api/comment/repository"
-	commentService "github.com/TenaHub/api/comment/service"
+	commentRepository "github.com/tenahubapi/comment/repository"
+	commentService "github.com/tenahubapi/comment/service"
 
-	ratingRepository "github.com/TenaHub/api/rating/repository"
-	ratingService "github.com/TenaHub/api/rating/service"
+	ratingRepository "github.com/tenahubapi/rating/repository"
+	ratingService "github.com/tenahubapi/rating/service"
 
-	sesRepository "github.com/TenaHub/api/session/repository"
-	sesService "github.com/TenaHub/api/session/service"
+	sesRepository "github.com/tenahubapi/session/repository"
+	sesService "github.com/tenahubapi/session/service"
 
-	// serviceRepo "github.com/TenaHub/api/service/repository"
-	// serviceServ "github.com/TenaHub/api/service/service"
-	//adminRepo "github.com/TenaHub/api/admin/repository"
-	//adminServ "github.com/TenaHub/api/admin/service"
-	//agentRepo "github.com/TenaHub/api/agent/repository"
-	//agentServ "github.com/TenaHub/api/agent/service"
+	// serviceRepo "github.com/tenahubapi/service/repository"
+	// serviceServ "github.com/tenahubapi/service/service"
+	//adminRepo "github.com/tenahubapi/admin/repository"
+	//adminServ "github.com/tenahubapi/admin/service"
+	//agentRepo "github.com/tenahubapi/agent/repository"
+	//agentServ "github.com/tenahubapi/agent/service"
 
-	healthCenterRepo "github.com/TenaHub/api/healthcenter/repository"
-	healthCenterServ "github.com/TenaHub/api/healthcenter/service"
-	feedBackRepo "github.com/TenaHub/api/comment/repository"
-	feedBackServ "github.com/TenaHub/api/comment/service"
-	"github.com/TenaHub/api/user/repository"
-	"github.com/TenaHub/api/user/service"
+	healthCenterRepo "github.com/tenahubapi/healthcenter/repository"
+	healthCenterServ "github.com/tenahubapi/healthcenter/service"
+	feedBackRepo "github.com/tenahubapi/comment/repository"
+	feedBackServ "github.com/tenahubapi/comment/service"
+	"github.com/tenahubapi/user/repository"
+	"github.com/tenahubapi/user/service"
 	"github.com/julienschmidt/httprouter"
 	"github.com/jinzhu/gorm"
+	"os"
 )
 
 
 func main()  {
-	dbconn, err := gorm.Open("postgres", "postgres://postgres:0912345678@localhost/tenahub?sslmode=disable")
+	//dbconn, err := gorm.Open("postgres", "postgres://postgres:0912345678@localhost/tenahub?sslmode=disable")
 	//dbconn, err := gorm.Open("postgres", "postgres://postgres:password@localhost/tenahubdb?sslmode=disable")
-	
+	dbconn, err := gorm.Open("postgres", os.Getenv("DATABASE_URL"))
 	if err != nil {
 		panic(err)
 	}
@@ -132,6 +133,12 @@ func main()  {
 	router.GET("/v1/session", sesHandl.GetSession)
 	router.POST("/v1/session", sesHandl.PostSession)
 	router.DELETE("/v1/session/:uuid", sesHandl.DeleteSession)
-	http.ListenAndServe(":8181", router)
+
+	err = http.ListenAndServe(":"+os.Getenv("PORT"), router)
+	if err != nil {
+		panic(err)
+	}
+
+	//http.ListenAndServe(":8181", router)
 }
 

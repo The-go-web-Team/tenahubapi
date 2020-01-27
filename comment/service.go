@@ -1,7 +1,7 @@
 package comment
 
 import (
-	"github.com/TenaHub/api/entity"
+	"github.com/tenahubapi/entity"
 )
 
 

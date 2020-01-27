@@ -7,10 +7,10 @@ import (
 	"net/http"
 	"io/ioutil"
 	"encoding/json"
-	serviceRepo "github.com/TenaHub/api/service/repository"
-	serviceServ "github.com/TenaHub/api/service/service"
-	"github.com/TenaHub/api/entity"
-	"github.com/TenaHub/api/delivery/http/handler"
+	serviceRepo "github.com/tenahubapi/service/repository"
+	serviceServ "github.com/tenahubapi/service/service"
+	"github.com/tenahubapi/entity"
+	"github.com/tenahubapi/delivery/http/handler"
 	"reflect"
 )
 

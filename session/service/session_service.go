@@ -1,8 +1,8 @@
 package service
 
 import (
-	"github.com/TenaHub/api/entity"
-	"github.com/TenaHub/api/session"
+	"github.com/tenahubapi/entity"
+	"github.com/tenahubapi/session"
 )
 
 // SessionServiceImpl implements user.SessionService interface

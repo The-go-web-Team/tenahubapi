@@ -3,10 +3,10 @@ package repository
 import (
 	"fmt"
 	"github.com/lib/pq"
-	"github.com/TenaHub/api/entity"
+	"github.com/tenahubapi/entity"
 	"github.com/jinzhu/gorm"
 	"golang.org/x/crypto/bcrypt"
-	"github.com/TenaHub/api/delivery/http/handler"
+	"github.com/tenahubapi/delivery/http/handler"
 )
 
 // UserGormRepo is repository implements user.UserRepository

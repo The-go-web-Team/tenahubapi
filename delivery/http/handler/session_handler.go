@@ -1,11 +1,11 @@
 package handler
 
 import (
-	"github.com/TenaHub/api/session"
+	"github.com/tenahubapi/session"
 	"net/http"
 	"github.com/julienschmidt/httprouter"
 	"encoding/json"
-	"github.com/TenaHub/api/entity"
+	"github.com/tenahubapi/entity"
 	"fmt"
 )
 

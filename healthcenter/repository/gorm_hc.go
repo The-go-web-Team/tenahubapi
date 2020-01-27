@@ -2,10 +2,10 @@ package repository
 
 import (
 	"github.com/jinzhu/gorm"
-	"github.com/TenaHub/api/entity"
-	// "github.com/TenaHub/api/healthcenter"
-	"github.com/TenaHub/api/delivery/http/handler"
-	"github.com/TenaHub/api/healthcenter"
+	"github.com/tenahubapi/entity"
+	// "github.com/tenahubapi/healthcenter"
+	"github.com/tenahubapi/delivery/http/handler"
+	"github.com/tenahubapi/healthcenter"
 	"fmt"
 )
 

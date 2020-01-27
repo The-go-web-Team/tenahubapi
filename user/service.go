@@ -1,6 +1,6 @@
 package user
 
-import "github.com/TenaHub/api/entity"
+import "github.com/tenahubapi/entity"
 
 type UserService interface {
 	Users(role string) ([]entity.User, []error)

@@ -1,8 +1,8 @@
 package service
 
 import (
-	"github.com/TenaHub/api/entity"
-	"github.com/TenaHub/api/healthcenter"
+	"github.com/tenahubapi/entity"
+	"github.com/tenahubapi/healthcenter"
 	"fmt"
 )
 

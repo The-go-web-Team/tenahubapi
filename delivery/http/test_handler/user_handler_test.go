@@ -5,12 +5,12 @@ import (
 	"net/http"
 	"net/http/httptest"
 	"io/ioutil"
-	userRepo "github.com/TenaHub/api/user/repository"
-	userServ "github.com/TenaHub/api/user/service"
+	userRepo "github.com/tenahubapi/user/repository"
+	userServ "github.com/tenahubapi/user/service"
 	"github.com/julienschmidt/httprouter"
 	"reflect"
-	"github.com/TenaHub/api/entity"
-	"github.com/TenaHub/api/delivery/http/handler"
+	"github.com/tenahubapi/entity"
+	"github.com/tenahubapi/delivery/http/handler"
 	"encoding/json"
 )
 

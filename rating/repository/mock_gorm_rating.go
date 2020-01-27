@@ -1,9 +1,9 @@
 package repository
 
 import (
-	"github.com/TenaHub/api/entity"
+	"github.com/tenahubapi/entity"
 	"github.com/jinzhu/gorm"
-	"github.com/TenaHub/api/rating"
+	"github.com/tenahubapi/rating"
 )
 
 // RatingRepository implements rating.Repository

@@ -1,7 +1,7 @@
 package rating
 
 import (
-	"github.com/TenaHub/api/entity"
+	"github.com/tenahubapi/entity"
 )
 
 // RatingService is

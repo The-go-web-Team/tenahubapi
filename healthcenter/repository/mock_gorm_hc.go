@@ -2,9 +2,9 @@ package repository
 
 import (
 	"github.com/jinzhu/gorm"
-	"github.com/TenaHub/api/entity"
+	"github.com/tenahubapi/entity"
 
-	"github.com/TenaHub/api/healthcenter"
+	"github.com/tenahubapi/healthcenter"
 )
 
 type MockHealthCenterGormRepo struct {

@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/TenaHub/api/rating"
+	"github.com/tenahubapi/rating"
 	"github.com/julienschmidt/httprouter"
 )
 
