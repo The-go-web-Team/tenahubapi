@@ -35,8 +35,6 @@ import (
 	"github.com/julienschmidt/httprouter"
 	"github.com/jinzhu/gorm"
 	"os"
-	"github.com/tenahubapi/entity"
-	"fmt"
 )
 
 
@@ -50,12 +48,12 @@ func main()  {
 
 	defer dbconn.Close()
 
-	errs := dbconn.CreateTable(&entity.Comment{}, &entity.Rating{},&entity.HealthCenter{}, &entity.Service{},&entity.User{}, &entity.Hcrating{},&entity.Session{}, &entity.UserComment{}).GetErrors()
-	fmt.Println(errs)
-
-	if len(errs) > 0 {
-		panic(errs)
-	}
+	//errs := dbconn.CreateTable(&entity.Comment{}, &entity.Rating{},&entity.HealthCenter{}, &entity.Service{},&entity.User{}, &entity.Hcrating{},&entity.Session{}, &entity.UserComment{}).GetErrors()
+	//fmt.Println(errs)
+	//
+	//if len(errs) > 0 {
+	//	panic(errs)
+	//}
 
 	userRepo := repository.NewUserGormRepo(dbconn)
 	userServ := service.NewUserService(userRepo)
